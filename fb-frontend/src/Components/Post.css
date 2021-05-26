@@ -1,0 +1,115 @@
+.post {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 1);
+  background: white;
+}
+
+.post__image > img {
+  width: 100%;
+}
+
+.post__top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.post__avatar {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.post__topInfo > h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.post__topInfo > p {
+  margin: 0;
+  font-size: small;
+  color: #65676b;
+}
+
+.post__message {
+  margin-left: 1rem;
+  font-weight: 400;
+}
+
+.post__image > img {
+  width: 100%;
+}
+
+.post__options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem;
+  font-size: medium;
+  font-weight: 500;
+  border-top: 1px solid #ced0d4;
+  color: #59626b;
+  cursor: pointer;
+}
+
+.post__option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0.3rem 0;
+  margin-right: 0.2rem;
+  padding: 0.4rem 0;
+  border-radius: 0.3rem;
+  transition-timing-function: ease-out;
+  transition: 0.2s;
+}
+
+.post__option:hover {
+  background: #f2f2f2;
+  transition: width 0.5s ease;
+}
+
+.post__option > p {
+  margin: 0;
+  margin-left: 0.1rem;
+}
+
+.post__option > .MuiSvgIcon-root {
+  margin-right: 0.4rem;
+  font-size: 1.3rem;
+}
+
+.post__optionAvatar {
+  display: flex;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  transition-timing-function: ease-out;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.post__optionAvatar:hover {
+  background: #f2f2f2;
+  transition: width 0.5s ease;
+}
+
+@media (max-width: 850px) {
+  .post {
+    border-radius: 0;
+  }
+  .post__avatar {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .post__topInfo > p {
+    font-size: 70%;
+  }
+  .post__optionAvatar {
+    display: none;
+  }
+  .post__option > p {
+    font-size: 70%;
+  }
+}

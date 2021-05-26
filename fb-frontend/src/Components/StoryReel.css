@@ -1,0 +1,20 @@
+.storyReel {
+  display: flex;
+  margin: 1.5rem 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.storyReel::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .storyReel {
+    display: flex;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 70%;
+    background: #fff;
+  }
+}

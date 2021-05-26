@@ -1,0 +1,15 @@
+.sidebar {
+  padding: 1rem 0.5rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .sidebar {
+    display: none;
+  }
+}
